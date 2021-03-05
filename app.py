@@ -96,13 +96,13 @@ if __name__ == '__main__':
     global ALLOWED_EXTENSIONS
     ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
 
-    upload_directory = '/data/upload/'
+    upload_directory = os.path.join(app.root_path, 'upload')
     create_directory(upload_directory)
 
-    results_img_directory = '/data/result_images/'
+    results_img_directory = os.path.join(app.root_path, 'result_images')
     create_directory(results_img_directory)
 
-    model_directory = '/data/models/'
+    model_directory = os.path.join(app.root_path, 'result_images')
     create_directory(model_directory)
 
     artistic_model_url = "https://data.deepai.org/deoldify/ColorizeArtistic_gen.pth"
