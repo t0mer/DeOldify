@@ -24,7 +24,7 @@ RUN pip install scikit-image
 
 RUN pip install requests
 
-EXPOSE 5000
+EXPOSE 5020
 
 ENTRYPOINT ["python3"]
 
