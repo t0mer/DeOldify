@@ -24,6 +24,10 @@ RUN pip install scikit-image
 
 RUN pip install requests
 
+RUN pip install loguru
+
+RUN pip install telepot
+
 EXPOSE 5020
 
 ENTRYPOINT ["python3"]
