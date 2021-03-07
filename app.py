@@ -7,7 +7,6 @@ from telepot.loop import MessageLoop
 
 from app_utils import download, generate_random_filename, clean_me, clean_all 
 from app_utils import get_model_bin, convertToJPG, create_directory
-from app_utils import 
 from loguru import logger
 
 from deoldify.visualize import *
