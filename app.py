@@ -23,7 +23,7 @@ else:
     del os.environ["CUDA_VISIBLE_DEVICES"]
 
 render_factor = os.environ["RENDER_FACTOR"]
-BOT_TOKEN  = os.environ["BOT_TOKEN "]
+BOT_TOKEN  = os.environ["BOT_TOKEN"]
 
 # Set upload directory and create if not exists
 upload_directory = '/data/upload'
