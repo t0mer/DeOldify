@@ -1,0 +1,16 @@
+---
+version: "3.7"
+
+services:
+
+  deoldify:
+    image: techblog/deoldify
+    container_name: deoldify
+    restart: always
+    environment:
+      - BOT_TOKEN= #Required Telegram bot token
+      - RENDER_FACTOR=40 #Optional, Default is 30
+    volumes:
+      - ./deoldify/models:/data/models
+      - /etc/localtime:/etc/localtime:ro      
+
