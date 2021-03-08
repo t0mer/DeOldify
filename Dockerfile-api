@@ -10,6 +10,10 @@ RUN mkdir -p /root/.torch/models
 
 RUN mkdir -p /data/models
 
+RUN mkdir -p /data/upload
+
+RUN mkdir -p /data/result_images
+
 ADD . /data/
 
 WORKDIR /data
