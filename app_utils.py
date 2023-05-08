@@ -112,7 +112,7 @@ def create_directory(path):
 def get_model_bin(url, output_path):
     if not os.path.exists(output_path):
         create_directory(output_path)
-        cmd = "wget -O %s %s" % (output_path, url)
+        cmd = "wget -O %s %s --no-check-certificate" % (output_path, url)
         print(cmd)
         os.system(cmd)
 
