@@ -1,4 +1,4 @@
-FROM nvcr.io/nvidia/pytorch:23.04-py3
+FROM nvcr.io/nvidia/pytorch:19.04-py3
 
 RUN apt -yqq update
 
