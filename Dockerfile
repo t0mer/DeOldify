@@ -1,18 +1,12 @@
-From nvcr.io/nvidia/pytorch:19.04-py3
+FROM nvcr.io/nvidia/pytorch:23.04-py3
 
-RUN apt-get -y update
+RUN apt -yqq update
 
-RUN apt-get install -y python3-pip software-properties-common wget ffmpeg
-
-RUN apt-get -y update
+RUN apt install -yqq python3-pip software-properties-common wget ffmpeg
 
 RUN mkdir -p /root/.torch/models
 
-RUN mkdir -p /data/models
-
-RUN mkdir -p /data/upload
-
-RUN mkdir -p /data/result_images
+RUN mkdir -p /data/{models,upload,result_images}
 
 RUN wget -O /root/.torch/models/vgg16_bn-6c64b313.pth https://download.pytorch.org/models/vgg16_bn-6c64b313.pth
 
@@ -24,23 +18,9 @@ WORKDIR /data
 
 RUN pip install -r requirements.txt
 
-#RUN pip install  Flask
+ENV RENDER_FACTOR 30
 
-RUN pip install Pillow
-
-RUN pip install scikit-image
-
-RUN pip install requests
-
-RUN pip install loguru
-
-RUN pip install telepot
-
-
-
-ENV RENDER_FACTOR = 30
-
-ENV BOT_TOKEN = ""
+ENV BOT_TOKEN ""
 
 
 ENTRYPOINT ["python3"]
