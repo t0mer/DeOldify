@@ -1,3 +1,6 @@
+ENV DEBIAN_FRONTEND noninteractive
+ENV DEBCONF_NONINTERACTIVE_SEEN true
+
 FROM nvcr.io/nvidia/pytorch:22.01-py3
 
 RUN apt -yqq update
