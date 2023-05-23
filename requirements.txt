@@ -6,7 +6,7 @@ ffmpeg-python
 youtube-dl
 jupyterlab
 opencv-python
-opencv-python-headless
+opencv-python-headless<4.3
 pillow
 scikit-image
 requests
