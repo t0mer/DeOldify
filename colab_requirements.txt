@@ -9,6 +9,6 @@ requests>=2.32.2 # not directly required, pinned by Snyk to avoid a vulnerabilit
 setuptools>=78.1.1 # not directly required, pinned by Snyk to avoid a vulnerability
 urllib3>=2.5.0 # not directly required, pinned by Snyk to avoid a vulnerability
 fonttools>=4.43.0 # not directly required, pinned by Snyk to avoid a vulnerability
-torch>=2.6.0 # not directly required, pinned by Snyk to avoid a vulnerability
+torch>=2.9.0 # not directly required, pinned by Snyk to avoid a vulnerability
 wheel>=0.38.0 # not directly required, pinned by Snyk to avoid a vulnerability
 protobuf>=4.25.8 # not directly required, pinned by Snyk to avoid a vulnerability
